@@ -1,0 +1,129 @@
+/* Police raleway */
+
+@font-face {
+    font-family: 'Raleway_SemiBold';
+    src: url('police/Raleway-SemiBold.woff2') format('woff2'), url('Raleway-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway_ExtraBold';
+    src: url('police/Raleway-ExtraBold.woff2') format('woff2'), url('police/Raleway-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /*background-color: #F2F2F2;*/
+}
+
+body {
+    margin: auto;
+}
+
+header {
+    display: flex;
+}
+
+nav ul {
+    margin: auto;
+}
+
+nav {
+    position: absolute;
+    list-style-type: none;
+    margin-right: 115px;
+    right: 0;
+    margin-left: auto;
+}
+
+nav li {
+    display: inline-block;
+    padding: 24px;
+    font-family: Raleway_SemiBold;
+    border-top: 2px white solid;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.reservia {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.inscription {
+    margin-top: 26px;
+    padding-right: 20px;
+    margin-left: auto;
+    font-family: Raleway_SemiBold;
+}
+
+.inscription a {
+    text-decoration: none;
+    color: #0065FC;
+}
+
+.reservia img {
+    position: relative;
+    width: 120px;
+    height: auto;
+}
+
+/* EFFETS SECONDAIRES */
+nav li:hover {
+    border-top: 2px #0065FC solid;
+}
+
+nav li a:hover {
+    color: #0065FC;
+}
+
+nav li a:focus {
+    color: #0065FC;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Rédigez vos propriétés CSS ici */
+    nav ul {
+        width: 100%;
+        padding-left: 0;
+        /*border: 2px black solid;*/
+    }
+
+    nav {
+        width: 100%;
+        top: 80px;
+        
+        margin: auto;
+        padding-left: 0;
+    }
+
+    nav li {
+        border-bottom: 2px #F2F2F2 solid;
+        border-top: hidden;
+        width: 49%;
+        text-align: center;
+    }
+
+    .inscription {
+        
+    }
+
+    nav li:hover {
+        border-bottom: 2px #0065FC solid;
+        border-top: none;
+    }
+
+}
+
+
