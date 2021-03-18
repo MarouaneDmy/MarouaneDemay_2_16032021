@@ -1,4 +1,4 @@
-/* Police raleway */
+/* ------------------------------------------------ Polices raleway téléchargées --------------------------------------------------*/
 
 @font-face {
     font-family: 'Raleway_SemiBold';
@@ -18,96 +18,308 @@
 
 * {
     box-sizing: border-box;
+    font-family: Raleway_SemiBold;
 }
 
+/* Crée des marges à gauche et à droite de la page*/
 html {
-    /*background-color: #F2F2F2;*/
+   margin-left: 17%;
+   margin-right: 17%
 }
 
-body {
-    margin: auto;
-}
+/* ----------------------------------------------------------------------------- HEADER ------------------------------------------------------------------------------*/
 
+/* Aligne tout ce qu'il a dans le Header sur la même ligne */
 header {
     display: flex;
 }
 
+
+/* Enlève la marge par défaut */
 nav ul {
     margin: auto;
+    margin-right: 0;
+    padding: 0;
 }
 
+/* Positionne les liens de navigations en haut à droite */
 nav {
-    position: absolute;
-    list-style-type: none;
-    margin-right: 115px;
-    right: 0;
-    margin-left: auto;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    margin-top: 0;
 }
 
+
+/* Positionne les liens de navigations en haut à droite */
 nav li {
     display: inline-block;
     padding: 24px;
-    font-family: Raleway_SemiBold;
     border-top: 2px white solid;
 }
 
+/* Enlève le soulignement du texte et change la couleur en gris */
 nav li a {
     text-decoration: none;
     color: #666666;
 }
 
+/* Place le logo Reservia en haut à gauche */
 .reservia {
-    margin-left: 20px;
     margin-top: 5px;
 }
 
+/* Place le lien S'inscrire en haut à droite */
 .inscription {
     margin-top: 26px;
     padding-right: 20px;
-    margin-left: auto;
-    font-family: Raleway_SemiBold;
+    margin-left: 25px;
+    font-family: Raleway_ExtraBold;
 }
 
+/* Enlève le soulignement du texte et change sa couleur en bleu*/
 .inscription a {
     text-decoration: none;
     color: #0065FC;
 }
 
+/* Taille de l'image*/
 .reservia img {
-    position: relative;
     width: 120px;
     height: auto;
 }
 
-/* EFFETS SECONDAIRES */
+/* Crée une bordure bleu au-dessus des liens de navigations lorsque la souris passe dessus*/
 nav li:hover {
     border-top: 2px #0065FC solid;
 }
 
+/* Le lien de navigation devient bleu lorsque la souris passe dessus */
 nav li a:hover {
     color: #0065FC;
 }
 
+/* Le lien de navigation devient bleu lorsque l'on a cliqué dessus en dernier */
 nav li a:focus {
     color: #0065FC;
 }
 
-@media screen and (max-width: 1024px) {
-    /* Rédigez vos propriétés CSS ici */
+/* ------------------------------------------------------------------------- BODY ----------------------------------------------------------------*/
+
+/* Supprime les marges du corps */
+body {
+    margin: auto;
+}
+
+/* ----------------- Titre de la page --------------*/
+
+/* Taille, décale le titre un peu à droite et change sa police */
+.titre {
+    font-size: 28px;
+    text-align: justify;
+    font-family: Raleway_ExtraBold;
+}
+
+/* Taille, décale le sous-titre un peu à droite et change sa couleur */
+.sous-titre {
+    font-size: 20.5px;
+    text-align: justify;
+    color: #666666;
+}
+
+/* ----------------- Champs de saisie et bouton de recherche --------------*/
+
+/* Permet d'aligner le contenu de la div recherche sur la même ligne*/
+.recherche {
+    display: flex;
+}
+
+/* Décale le bloc à droite, ajoute une couleur de fond grise, taille longueur et largeur, arrondis les angles haut et bas gauche puis centre l'image */
+.recherche p {
+    background-color: #F2F2F2;
+    height: 42px;
+    width: 45px;
+    border-radius: 30% 0% 0% 30%;
+    text-align: center;
+}
+
+/* taille de l'image et marge intérieur pour centrer*/
+.recherche p img {
+    width: 15px;
+    padding-top: 9px;
+}
+
+/* taille longueur largeur du champs de recherche, marge extérieur pour aligner avec l'image, change les bordures et décale le texte */
+.recherche input {
+    height: 40px;
+    width: 180px;
+    margin-top: 17px;
+    border: 1px #F2F2F2 solid;
+    padding-left: 15px;
+}
+
+/* Modifie la couleur du texte en blanc, le fond en bleu, la taille, aligne avec le champs de recherche et arrondis les angles haut et bas droite du bouton */
+.recherche button {
+    color: white;
+    background-color: #0065FC;
+    height: 42px;
+    width: 100px;
+    margin-top: 16.5px;
+    border: 1px #0065FC solid;
+    border-radius: 0% 10px 10px 0%;
+}
+
+
+/* Disparition du bouton Recherche logo */
+.search {
+    display: none;
+}
+
+/* ----------------- Filtres de la page --------------*/
+
+/* Aligne tout le contenu de la div filtres */
+.filtres {
+    display: flex;
+}
+
+/* Taille, police, positionnement du texte et espacement */
+.filtres h2 {
+    font-size: 20.5px;
+    font-family: Raleway_ExtraBold;
+    margin-right: 40px;
+}
+
+
+/* Aligne les contenus des filtres, Taille, marge entre les divs, bordures et arrondis */
+.economie, .famille, .romantique, .animaux {
+    display: flex;
+    height: 42px;
+    width: auto;
+    margin-top: 11px;
+    margin-left: 20px;
+    border: 1px #DEEBFF solid;
+    border-radius: 30px;
+}
+
+/* Rempli le filtre de la couleur grise lorsque la souris passe dessus */
+.economie:hover {
+    background-color: #DEEBFF;
+}
+
+/* Rempli le filtre de la couleur grise lorsque la souris passe dessus */
+.famille:hover {
+    background-color: #DEEBFF;
+}
+
+/* Rempli le filtre de la couleur grise lorsque la souris passe dessus */
+.romantique:hover {
+    background-color: #DEEBFF;
+}
+/* Rempli le filtre de la couleur grise lorsque la souris passe dessus*/
+.animaux:hover {
+    background-color: #DEEBFF;
+}
+
+/* Fond bleu clair derrière le logo, taille, centre le logo et le positionne verticalement */
+.filtres .logo {
+    background-color: #DEEBFF;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 30px;
+    margin: auto 0;
+}
+
+/* Centre le contenu et ajoute un espacement à gauche et à droite */
+.filtres .filtre {
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Donne la couleur bleu au logo*/
+.logo a {
+    color: #0065FC;
+}
+
+/* Supprime le soulignement, change la police et la couleur en noir */
+.filtre a {
+    text-decoration: none;
+    font-family: Raleway_ExtraBold;
+    color: black;
+}
+
+/* Aligne le logo verticalement */
+.filtres a i {
+    padding-top: 10px;
+}
+
+/* ----------------- INFORMATION --------------*/
+
+/* Aligne le contenu de la div information */
+.information {
+    display: flex;
+}
+
+/* Donne un taille, une minimum pour qu'elle ne soit pas déformé, aligne le logo, met une bordure, centre verticalement le bloc p dans la div */
+.information .info {
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    text-align: center;
+    border: 1px #DEEBFF solid;
+    border-radius: 30px;
+    margin: auto 0;
+}
+
+/* Change la couleur du logo en bleu et sa taille*/
+.information .info a {
+    color: #0065FC; 
+    font-size: 15px;
+}
+
+/* Centre le logo dans le bloc p*/
+.information a i {
+    margin-top: 4px;
+}
+
+/* Décalage entre le logo et le texte */
+.information .nbrLogement {
+    padding-left: 30px;
+    text-align: justify;
+    color: #666666;
+}
+
+
+/* ---------------------------------------------------------------- RESPONSIVE DESIGN ---------------------------------------------------------------------*/
+@media screen and (max-width: 1280px) {
+    /*----------------------------------------------------- HEADER --------------------------------------------------------*/
+    
+    /* Fais descendre les liens de navigation d'une ligne */
+    header {
+        display: inline;
+    }
+
+    /* Ajoute une marge à gauche du logo */
+    .reservia {
+        margin-left: 20px;
+    }
+
+    /* La navigation prends toute la largeur et se colle au côté */
     nav ul {
         width: 100%;
         padding-left: 0;
-        /*border: 2px black solid;*/
     }
 
-    nav {
-        width: 100%;
-        top: 80px;
-        
-        margin: auto;
-        padding-left: 0;
+    /* Position le bouton s'inscrire en haut à droite */
+    .inscription {
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
+    /* Enlève la bordure du haut qui s'affiche et ajoute une en bas grise, prends la moitié de la largeur pour chaque lien puis aligne le texte */
     nav li {
         border-bottom: 2px #F2F2F2 solid;
         border-top: hidden;
@@ -115,13 +327,75 @@ nav li a:focus {
         text-align: center;
     }
 
-    .inscription {
-        
-    }
-
+    /* affiche une bordure bleu en bas lorsque la souris passe sur le lien */
     nav li:hover {
         border-bottom: 2px #0065FC solid;
         border-top: none;
+    }
+
+    /*-------------------------------------------------------- BODY -----------------------------------------------------------*/
+    
+    /* Supprime les marges */
+    html {
+        margin: auto;
+    }
+
+    /* Permet au titre de ne pas coller aux bords de l'écran */
+    .titre {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* Permet au sous-titre de ne pas coller aux bords de l'écran */
+    .sous-titre {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* Centre le champs de recherche sur l'écran */
+    .recherche {
+       justify-content: center;
+    }
+
+    /* Change la forme du bouton de recherche */
+    .recherche button {
+        width: 45px;
+        border-radius: 0 30% 30% 0;
+    }
+
+    /* Disparition du bouton Recherche écrit */
+    .defaut {
+        display: none;
+    }
+
+    /* Apparation du bouton Recherche logo */
+    .search {
+        display: inline;
+    }
+
+    /* Annule l'alignement de filtres */
+    .filtres {
+        display: inline;
+    }
+
+    /* Ajoute une marge au titre pour ne pas coller au bord de l'écran */
+    h2 {
+        margin-left: 20px;
+    }
+
+    /* Ajoute une marge au filtre pour ne pas coller au bord de l'écran */
+    .economie, .famille, .romantique, .animaux {
+        margin-right: 20px;
+    }
+
+    /* Ajoute une marge au logo information pour ne pas coller au bord de l'écran */
+    .information {
+        margin-left: 20px;
+    }
+
+    /* Ajoute une marge au texte pour ne pas coller au logo information */
+    .nbrLogement {
+        margin-right: 20px;
     }
 
 }
