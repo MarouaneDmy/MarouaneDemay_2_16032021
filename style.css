@@ -23,11 +23,16 @@
 
 /* Crée des marges à gauche et à droite de la page*/
 html {
-   margin-left: 17%;
-   margin-right: 17%
+   margin-left: 18.5%;
+   margin-right: 18.5%
 }
 
-/* ----------------------------------------------------------------------------- HEADER ------------------------------------------------------------------------------*/
+/* Supprime les marges du corps */
+body {
+    margin: auto;
+}
+
+/* ------------------------- Logo Reservia et liens de navigation -------------------------------*/
 
 /* Aligne tout ce qu'il a dans le Header sur la même ligne */
 header {
@@ -104,30 +109,27 @@ nav li a:focus {
     color: #0065FC;
 }
 
-/* ------------------------------------------------------------------------- BODY ----------------------------------------------------------------*/
-
-/* Supprime les marges du corps */
-body {
-    margin: auto;
-}
-
-/* ----------------- Titre de la page --------------*/
+/* -------------------------------- Titre de la page------------------ --------------*/
 
 /* Taille, décale le titre un peu à droite et change sa police */
 .titre {
-    font-size: 28px;
+    font-size: 23px;
+    margin: 0;
     text-align: justify;
     font-family: Raleway_ExtraBold;
 }
 
+
+
 /* Taille, décale le sous-titre un peu à droite et change sa couleur */
 .sous-titre {
-    font-size: 20.5px;
     text-align: justify;
+    margin: 0;
+    margin-top: 5px;
     color: #666666;
 }
 
-/* ----------------- Champs de saisie et bouton de recherche --------------*/
+/* ---------------------------- Champs de saisie et bouton de recherche --------------------------------*/
 
 /* Permet d'aligner le contenu de la div recherche sur la même ligne*/
 .recherche {
@@ -175,18 +177,19 @@ body {
     display: none;
 }
 
-/* ----------------- Filtres de la page --------------*/
+/* ----------------------------------- Les différents filtres ------------------------------------*/
 
 /* Aligne tout le contenu de la div filtres */
 .filtres {
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* Taille, police, positionnement du texte et espacement */
 .filtres h2 {
-    font-size: 20.5px;
+    font-size: 20px;
     font-family: Raleway_ExtraBold;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 
@@ -194,11 +197,30 @@ body {
 .economie, .famille, .romantique, .animaux {
     display: flex;
     height: 42px;
-    width: auto;
-    margin-top: 11px;
+    margin-top: 9px;
     margin-left: 20px;
     border: 1px #DEEBFF solid;
     border-radius: 30px;
+}
+
+/* Largeur du filtre */
+.economie {
+    width: 170px;
+}
+
+/* Largeur du filtre */
+.famille {
+    width: 140px;
+}
+
+/* Largeur du filtre */
+.romantique {
+    width: 160px;
+}
+
+/* Largeur du filtre */
+.animaux {
+    width: 226px;
 }
 
 /* Rempli le filtre de la couleur grise lorsque la souris passe dessus */
@@ -234,8 +256,6 @@ body {
 /* Centre le contenu et ajoute un espacement à gauche et à droite */
 .filtres .filtre {
     margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 /* Donne la couleur bleu au logo*/
@@ -255,7 +275,7 @@ body {
     padding-top: 10px;
 }
 
-/* ----------------- INFORMATION --------------*/
+/* ------------------------- Logo Information et nombre de logements disponibles dans la ville --------------------------------*/
 
 /* Aligne le contenu de la div information */
 .information {
@@ -286,9 +306,86 @@ body {
 
 /* Décalage entre le logo et le texte */
 .information .nbrLogement {
-    padding-left: 30px;
+    padding-left: 10px;
     text-align: justify;
     color: #666666;
+}
+
+/*--------------------------------- Hébergement de la ville --------------------------------------*/
+
+/* Aligne tout le contenu de la div hebergement */
+.hebergement {
+    display: flex;
+}
+
+.hebergement_ville {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-right: 35px
+}
+
+.hebergement_ville .titre {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+}
+
+.hebergement_ville figure {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+.hebergement_ville figure figcaption p {
+    margin: auto;
+    padding-left: 10px;
+    color: #666666;
+    font-family: Raleway_ExtraBold;
+}
+
+.hebergement_ville figure figcaption p a {
+    text-decoration: none;
+    color: black;
+    font-family: Raleway_ExtraBold;
+}
+
+.hebergement_ville figure figcaption .prix {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: Raleway_SemiBold;
+}
+
+.hebergement_ville i {
+    color: #0065FC;
+}
+
+.hebergement_ville img {
+    width: 200px;
+    height: 140px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.popularite_ville {
+    width: 365px;
+    min-width: 350px;
+    height: 400px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.hebergement h2 a {
+    padding-left: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Raleway_ExtraBold;
+    color: black;
 }
 
 
@@ -341,15 +438,12 @@ body {
     }
 
     /* Permet au titre de ne pas coller aux bords de l'écran */
-    .titre {
-        margin-left: 20px;
+    .titre, .sous-titre {
         margin-right: 20px;
     }
 
-    /* Permet au sous-titre de ne pas coller aux bords de l'écran */
-    .sous-titre {
+    .titre, .sous-titre, h2, .information {
         margin-left: 20px;
-        margin-right: 20px;
     }
 
     /* Centre le champs de recherche sur l'écran */
@@ -368,19 +462,14 @@ body {
         display: none;
     }
 
-    /* Apparation du bouton Recherche logo */
+    /* Apparition du bouton Recherche logo */
     .search {
-        display: inline;
-    }
-
-    /* Annule l'alignement de filtres */
-    .filtres {
         display: inline;
     }
 
     /* Ajoute une marge au titre pour ne pas coller au bord de l'écran */
     h2 {
-        margin-left: 20px;
+        width: 100%;
     }
 
     /* Ajoute une marge au filtre pour ne pas coller au bord de l'écran */
@@ -388,15 +477,36 @@ body {
         margin-right: 20px;
     }
 
-    /* Ajoute une marge au logo information pour ne pas coller au bord de l'écran */
-    .information {
-        margin-left: 20px;
-    }
-
     /* Ajoute une marge au texte pour ne pas coller au logo information */
     .nbrLogement {
         margin-right: 20px;
     }
+
+    .hebergement {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .hebergement_ville {
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        background-color: white;
+    }
+
+    /*.hebergement_ville figure {
+        width: 100%;
+        text-align: center;
+    }*/
+
+    
+
+    .popularite_ville {
+        width: 100%;
+        margin-bottom: 30px;
+        border-radius: 0px;
+    }
+
 
 }
 
