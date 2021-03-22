@@ -1,6 +1,15 @@
 /* ------------------------------------------------ Polices raleway téléchargées --------------------------------------------------*/
 
 @font-face {
+    font-family: 'Raleway';
+    src: url('police/Raleway-Regular.woff2') format('woff2'), url('police/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
     font-family: 'Raleway_SemiBold';
     src: url('police/Raleway-SemiBold.woff2') format('woff2'), url('Raleway-SemiBold.woff') format('woff');
     font-weight: 600;
@@ -18,7 +27,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: Raleway_SemiBold;
+    font-family: Raleway;
 }
 
 /* Crée des marges à gauche et à droite de la page*/
@@ -66,6 +75,7 @@ nav li {
 /* Enlève le soulignement du texte et change la couleur en gris */
 nav li a {
     text-decoration: none;
+    font-family: Raleway_SemiBold;
     color: #666666;
 }
 
@@ -79,13 +89,13 @@ nav li a {
     margin-top: 26px;
     padding-right: 20px;
     margin-left: 25px;
-    font-family: Raleway_ExtraBold;
 }
 
 /* Enlève le soulignement du texte et change sa couleur en bleu*/
 .inscription a {
     text-decoration: none;
     color: #0065FC;
+    font-family: Raleway_SemiBold;
 }
 
 /* Taille de l'image*/
@@ -113,9 +123,8 @@ nav li a:focus {
 
 /* Taille, décale le titre un peu à droite et change sa police */
 .titre {
-    font-size: 23px;
+    font-size: 25px;
     margin: 0;
-    text-align: justify;
     font-family: Raleway_ExtraBold;
 }
 
@@ -123,10 +132,8 @@ nav li a:focus {
 
 /* Taille, décale le sous-titre un peu à droite et change sa couleur */
 .sous-titre {
-    text-align: justify;
     margin: 0;
     margin-top: 5px;
-    color: #666666;
 }
 
 /* ---------------------------- Champs de saisie et bouton de recherche --------------------------------*/
@@ -307,8 +314,6 @@ nav li a:focus {
 /* Décalage entre le logo et le texte */
 .information .nbrLogement {
     padding-left: 10px;
-    text-align: justify;
-    color: #666666;
 }
 
 /*--------------------------------- Hébergement de la ville --------------------------------------*/
@@ -318,6 +323,7 @@ nav li a:focus {
     display: flex;
 }
 
+/* Fais passer à la ligne les figures lorsqu'elle dépasse la largeur du bloc, change la couleur du fond en gris, ajoute des bords arrondis et crée un espacement */
 .hebergement_ville {
     display: flex;
     flex-wrap: wrap;
@@ -327,65 +333,186 @@ nav li a:focus {
     margin-right: 35px
 }
 
+/* Taille du titre, marges gauches, haut et bas et prends toute la largeur pour faire passer les autres blocs à la ligne */
 .hebergement_ville .titre {
+    font-size: 20px;
     margin-left: 30px;
     margin-top: 30px;
+    margin-bottom: 30px;
     width: 100%;
-    height: 50px;
 }
 
+/* Fond blanc, taille, marge intérieur, bordures, marges entre eux, ombres */
 .hebergement_ville figure {
     background-color: white;
+    width: 210px;
     padding: 5px;
     border-radius: 10px;
     margin-left: 30px;
     margin-top: 0px;
     margin-right: 20px;
+    box-shadow: 10px 10px 10px #E9E9E9;
 }
 
+/* Police d'écriture à l'intérieur de la figure et marge gauche*/
 .hebergement_ville figure figcaption p {
     margin: auto;
     padding-left: 10px;
-    color: #666666;
     font-family: Raleway_ExtraBold;
 }
 
+/* Prix en gras */
+.hebergement_ville figure figcaption p span {
+    font-weight: bold;
+}
+
+/* Enlève le soulignement du lien, change se police et sa couleur en noir */
 .hebergement_ville figure figcaption p a {
     text-decoration: none;
     color: black;
     font-family: Raleway_ExtraBold;
 }
 
+/* Police  et taille de la ligne de prix, marges intérieur */
 .hebergement_ville figure figcaption .prix {
     padding-top: 2px;
     padding-bottom: 2px;
-    font-family: Raleway_SemiBold;
+    font-size: 14.5px;
+    font-family: Raleway;
 }
 
+/* Couleur des étoiles et leurs tailles */
 .hebergement_ville i {
     color: #0065FC;
+    font-size: 13px;
 }
 
+/* Couleur des étoiles en moins */
+.hebergement_ville span i {
+    color: #E9E9E9;
+}
+
+/* Taille des images des hébergements et bordures courbées */
 .hebergement_ville img {
-    width: 200px;
     height: 140px;
+    width: 200px;
     border-radius: 10px 10px 0px 0px;
 }
 
-.popularite_ville {
-    width: 365px;
-    min-width: 350px;
-    height: 400px;
-    background-color: #F2F2F2;
-    border-radius: 20px;
+/* Prends toute la largeur pour avoir la ligne pour lui seul, enlève la marge gauche */
+.hebergement h2 {
+    width: 100%;
+    margin-left: 0;
 }
 
+/* Supprime les ajouts sur le lien, change la taille, la police, et la couleur en noir */
 .hebergement h2 a {
     padding-left: 30px;
     font-size: 18px;
     text-decoration: none;
     font-family: Raleway_ExtraBold;
     color: black;
+}
+
+/*------------------------- Hébergements populaires ---------------------*/
+
+/* Mets les figures en position de colonne et les centres */
+.hebergement_populaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 365px;
+    height: 610px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+/* Police du titre, marge supérieur et hauteur */
+.hebergement_populaire .titre {
+    font-size: 20px;
+    margin-top: 30px;
+    height: 60px;
+}
+
+/* Couleur, taille du logo et marge entre lui et le titre*/
+.hebergement_populaire .titre i{
+    padding-left: 100px;
+    color: black;
+    font-size: 18px;
+}
+
+/* Fond blanc, taille, marge intérieur, bordures, marges entre eux, ombres */
+.hebergement_populaire figure {
+    display: flex;
+    width: 320px;
+    height: 140px;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 35px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #E9E9E9;
+}
+
+/* Police d'écriture du bloc figcaption */
+.hebergement_populaire figure figcaption p {
+    margin: auto;
+    font-family: Raleway_ExtraBold;
+}
+
+/* Mets le prix en gras */
+.hebergement_populaire figure figcaption p span {
+    font-weight: bold;
+}
+
+/* Enlève les ajouts sur le lien, change la couleur en noir et la police */
+.hebergement_populaire figure figcaption p a {
+    text-decoration: none;
+    color: black;
+    font-family: Raleway_ExtraBold;
+}
+
+/* Donne 30% du figcaption au nom de l'hébergement */
+.hebergement_populaire figure figcaption .nom_hotel {
+    height: 30%;
+    padding-top: 10px;
+}
+
+/* Donne 30% du figcaption à la ligne du prix de l'hébergement, marge en haut et en bas pour séparer les figures, taille et police de l'écriture */
+.hebergement_populaire figure figcaption .prix {
+    height: 30%;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    font-size: 14.5px;
+    font-family: Raleway;
+}
+
+/* Donne 35% du figcaption aux étoiles de l'hébergement et les positionne tout en bas */
+.hebergement_populaire figure figcaption .etoiles {
+    display: flex;
+    height: 35%;
+    align-items: flex-end;
+}
+
+/* Couleur des étoiles en bleu et taille */
+.hebergement_populaire i { 
+    color: #0065FC;
+    font-size: 13px;
+}
+
+/* Couleur des étoiles en moins en gris */
+.hebergement_populaire span i {
+    display: flex;
+    color: #E9E9E9;  
+}
+
+/* Met l'image sur le côté gauche de la figure, taille de l'image, bordures et marge avec le texte */
+.hebergement_populaire img {
+    float: left;
+    width: 120px;
+    height: 130px;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 20px;
 }
 
 
@@ -420,7 +547,7 @@ nav li a:focus {
     nav li {
         border-bottom: 2px #F2F2F2 solid;
         border-top: hidden;
-        width: 49%;
+        width: 50%;
         text-align: center;
     }
 
@@ -439,6 +566,7 @@ nav li a:focus {
 
     /* Permet au titre de ne pas coller aux bords de l'écran */
     .titre, .sous-titre {
+        margin-top: 20px;
         margin-right: 20px;
     }
 
@@ -467,8 +595,8 @@ nav li a:focus {
         display: inline;
     }
 
-    /* Ajoute une marge au titre pour ne pas coller au bord de l'écran */
-    h2 {
+    /* Fais passer tous les filtres à la ligne */
+    .filtres h2 {
         width: 100%;
     }
 
@@ -482,26 +610,45 @@ nav li a:focus {
         margin-right: 20px;
     }
 
+    /* Inverse le passage à la ligne entre les hébergements de la ville et les populaires */
     .hebergement {
         flex-wrap: wrap-reverse;
-        justify-content: center;
     }
 
+    /* Change la couleur du fond en blanc et centre le bloc */
     .hebergement_ville {
-        width: 100%;
         justify-content: center;
         margin: auto;
         background-color: white;
     }
 
-    /*.hebergement_ville figure {
+    /* Positionne le titre */
+    .hebergement_ville .titre {
+        display: flex;
+        justify-content: center;
         width: 100%;
-        text-align: center;
-    }*/
+        padding-right: 55px;
+    }
 
-    
+    /* Modifie la largeur de la figure */
+    .hebergement_ville figure {
+        width: 320px;
+    }
 
-    .popularite_ville {
+    /* Modifie la taille de l'image */
+    .hebergement_ville img {
+        width: 310px;
+    }
+
+    /* Positionne le sous-titre afficher plus */
+    .hebergement h2 {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 40px;
+    }
+
+    /* Supprime les bordures courbées, prends toute la largeur de la ligne et ajoute une marge en-dessous */
+    .hebergement_populaire {
         width: 100%;
         margin-bottom: 30px;
         border-radius: 0px;
@@ -509,5 +656,7 @@ nav li a:focus {
 
 
 }
+
+
 
 
