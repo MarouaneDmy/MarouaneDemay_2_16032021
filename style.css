@@ -518,25 +518,25 @@ nav li a:focus {
 
 /*---------------------------------------------------------ACTIVITÉS------------------------------------------------------------*/
 
+/* Passage à la ligne lorsque l'un des blocs gauche ou droite n'a plus de place */
 .activite_ville {
     display: flex;
     flex-wrap: wrap;
 }
 
-.activite_ville section {
-    
-}
-
+/* Passage à la ligne lorsque que le bloc gauche1 ou gauche2 n'a plus de place */
 .activite_ville .gauche {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Passage à la ligne lorsque que le bloc droite1 ou droite2 n'a plus de place */
 .activite_ville .droite {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Taille, police et position du titre, prends 100% de la largeur pour passer les autres blocs à la ligne */
 .activite_ville .titre {
     font-size: 20px;
     margin-top: 30px;
@@ -544,6 +544,7 @@ nav li a:focus {
     width: 100%;
 }
 
+/* Taille, bordure arrondis, couleur de fond et ombre de la figure */
 .activite_ville figure {
     width: 270px;
     border-radius: 10px;
@@ -551,16 +552,19 @@ nav li a:focus {
     box-shadow: 10px 10px 10px #E9E9E9;
 }
 
+/* Taille et bordures arrondis de l'image */
 .activite_ville figure img {
     width: 270px;
     border-radius: 10px 10px 0px 0px;
 }
 
+/* Marges extérieurs enlevées et marge dessus ajoutée */
 .activite_ville figure figcaption p  {
     margin: 0;
     margin-top: 10px;
 }
 
+/* Enlève les ajouts sur le lien et défini la couleur en noir et la police, ajoute une marge intérieur gauche */
 .activite_ville figure figcaption p a {
     text-decoration: none;
     color: black;
@@ -568,30 +572,36 @@ nav li a:focus {
     padding-left: 10px;  
 }
 
+/* Taille de la figure1 */
 .activite_ville .figure1 {
     height: 340px;
     margin: 0;   
 }
 
+/* Taille de l'image de la figure1 */
 .activite_ville .figure1 img {
     height: 300px;
 }
 
+/* Marges du bloc gauche */
 .activite_ville .gauche {
     margin-right: 40px;
     margin-bottom: 40px;
 }
 
+/* Taille de la figure2 et ajout de marge gauche */
 .activite_ville .figure2 {
     height: 175px;
     margin: 0;
     margin-left: 35px;
 }
 
+/* Taille de l'image de la figure3 */
 .activite_ville .figure2 img {
     height: 130px;
 }
 
+/* Taille de la figure3 et ajout de marche dessus et gauche */
 .activite_ville .figure3 {
     height: 145px;
     margin: 0;
@@ -599,28 +609,35 @@ nav li a:focus {
     margin-left: 35px;
 }
 
+/* Taille de l'image de la figure3 */
 .activite_ville .figure3 img {
     height: 100px;
 }
 
+/* Taille de la figure2 du bloc de droite */
 .activite_ville .droite .figure2 {
     height: 145px;
 }
 
+/* Taille de l'image de la figure2 du bloc de droite */
 .activite_ville .droite .figure2 img {
     height: 100px;
 }
 
+/* Taille de la figure3 du bloc droite */
 .activite_ville .droite .figure3 {
     height: 175px;
 }
 
+/* Taille de l'image de la figure3 du bloc de droite */
 .activite_ville .droite .figure3 img {
     height: 130px;
 }
 
 
 /*-------------------------------------------------------- FOOTER --------------------------------------------------------*/
+
+/* Espacement des sections du footer, hauteur du footer, couleur, marge extérieur haute et marges intérieur ajoutés */
 footer {
     display: flex;
     justify-content: space-around;
@@ -631,10 +648,12 @@ footer {
     padding-left: 10px;
 }
 
+/* Déplacement des sections pour les approcher de la gauche */
 footer section {
     margin-right: 120px;
 }
 
+/* Décorations du lien enlevé, couleur, police et taille défini */
 footer section h1 a {
     text-decoration: none;
     color: black;
@@ -642,6 +661,7 @@ footer section h1 a {
     font-size: 20px;
 }
 
+/* Décorations du lien enlevé, couleur, police et taille défini */
 footer section p a {
     text-decoration: none;
     color: black;
@@ -752,6 +772,8 @@ footer section p a {
         margin-right: 20px;
     }
 
+    /*--------------------------------------- HEBERGEMENT -----------------------------------------*/
+
     /* Inverse le passage à la ligne entre les hébergements de la ville et les populaires */
     .hebergement {
         flex-wrap: wrap-reverse;
@@ -795,12 +817,16 @@ footer section p a {
         margin-bottom: 30px;
         border-radius: 0px;
     }
+    
+    /*------------------------------------------- ACTIVITÉ -------------------------------------------- */
 
+    /* Centre le contenu */
     .activite_ville {
         justify-content: center;
         margin: auto;
     }
 
+    /* Centre le titre et le déplace à gauche, prends 100% de la largeur pour prendre la ligne */
     .activite_ville .titre {
         display: flex;
         justify-content: center;
@@ -808,21 +834,25 @@ footer section p a {
         padding-right: 110px;
     }
     
+    /* Redonne l'affichage block pour passer à la ligne et ajout des marges extérieurs gauches et basses */
     .activite_ville .gauche {
         display: block;
         margin-left: 40px;
         margin-bottom: 5px;
     }
 
+    /* Redonne l'affichage block pour passer à la ligne et ajoute une marge basse */
     .activite_ville .droite {
         display: block;
         margin-bottom: 5px;
     }
 
+    /* Ajout d'une marge intérieur */
     .activite_ville figure {
         padding: 5px;
     }
 
+    /* Taille des figures du bloc de gauche et ajout des marges basse et gauche */
     .activite_ville .gauche figure {
         width: 320px;
         height: auto;
@@ -830,11 +860,13 @@ footer section p a {
         margin-left: 0;
     }
 
+    /* Taille des images des figures du bloc de gauche */
     .activite_ville .gauche figure img {
         height: 140px;
         width: 310px;
     }
 
+    /* Taille des figures du bloc de droite et ajout des marges basse et gauche */
     .activite_ville .droite figure {
         width: 320px;
         height: auto;
@@ -842,40 +874,47 @@ footer section p a {
         margin-left: 0;
     }
 
+    /* Taille des images des figures du bloc de droite */
     .activite_ville .droite figure img {
         height: 140px;
         width: 310px;
     }
 
+    /* Automatise la taille de la figure2 du bloc de droite */
     .activite_ville .droite .figure2 {
         height: auto;
     }
 
+    /* Taille de l'image de la figure2 du bloc de droite */
     .activite_ville .droite .figure2 img {
         height: 140px;
         width: 310px;
     }
 
+    /* Automatise la taille de la figure3 du bloc de droite */
     .activite_ville .droite .figure3 {
         height: auto;
     }
 
+    /* Taille de l'image de la figure3 du bloc de droite */
     .activite_ville .droite .figure3 img {
         height: 140px;
         width: 310px;
     }
 
+    /*---------------------------------------------- FOOTER ------------------------------------------*/
+
+    /* Le contenu s'affiche en colonne, la hauteur du bloc footer est maintenant automatique et ajoute une marge intérieur */
     footer {
         flex-direction: column;
         height: auto;
         padding-left: 70px;
     }
 
+    /* Déshérite la marge droite des sections du footer */
     footer section {
         margin-right: inherit;
     }
-
-
 }
 
 
