@@ -64,6 +64,9 @@ nav {
     margin-top: 0;
 }
 
+.inscription {
+    padding-right: 15px;
+}
 
 /* Positionne les liens de navigations en haut à droite */
 nav li {
@@ -87,7 +90,6 @@ nav li a {
 /* Place le lien S'inscrire en haut à droite */
 .inscription {
     margin-top: 26px;
-    padding-right: 20px;
     margin-left: 25px;
 }
 
@@ -327,7 +329,6 @@ nav li a:focus {
 .hebergement_ville {
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-right: 35px
@@ -515,6 +516,138 @@ nav li a:focus {
     margin-right: 20px;
 }
 
+/*---------------------------------------------------------ACTIVITÉS------------------------------------------------------------*/
+
+.activite_ville {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activite_ville section {
+    
+}
+
+.activite_ville .gauche {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activite_ville .droite {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activite_ville .titre {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.activite_ville figure {
+    width: 270px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 10px #E9E9E9;
+}
+
+.activite_ville figure img {
+    width: 270px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.activite_ville figure figcaption p  {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.activite_ville figure figcaption p a {
+    text-decoration: none;
+    color: black;
+    font-family: Raleway_ExtraBold;
+    padding-left: 10px;  
+}
+
+.activite_ville .figure1 {
+    height: 340px;
+    margin: 0;   
+}
+
+.activite_ville .figure1 img {
+    height: 300px;
+}
+
+.activite_ville .gauche {
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.activite_ville .figure2 {
+    height: 175px;
+    margin: 0;
+    margin-left: 35px;
+}
+
+.activite_ville .figure2 img {
+    height: 130px;
+}
+
+.activite_ville .figure3 {
+    height: 145px;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+.activite_ville .figure3 img {
+    height: 100px;
+}
+
+.activite_ville .droite .figure2 {
+    height: 145px;
+}
+
+.activite_ville .droite .figure2 img {
+    height: 100px;
+}
+
+.activite_ville .droite .figure3 {
+    height: 175px;
+}
+
+.activite_ville .droite .figure3 img {
+    height: 130px;
+}
+
+
+/*-------------------------------------------------------- FOOTER --------------------------------------------------------*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: 225px;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+footer section {
+    margin-right: 120px;
+}
+
+footer section h1 a {
+    text-decoration: none;
+    color: black;
+    font-family: Raleway_ExtraBold;
+    font-size: 20px;
+}
+
+footer section p a {
+    text-decoration: none;
+    color: black;
+    font-family: Raleway;
+    font-size: 17px;
+}
 
 /* ---------------------------------------------------------------- RESPONSIVE DESIGN ---------------------------------------------------------------------*/
 @media screen and (max-width: 1280px) {
@@ -553,7 +686,7 @@ nav li a:focus {
 
     /* affiche une bordure bleu en bas lorsque la souris passe sur le lien */
     nav li:hover {
-        border-bottom: 2px #0065FC solid;
+        border-bottom: 3px #0065FC solid;
         border-top: none;
     }
 
@@ -566,8 +699,17 @@ nav li a:focus {
 
     /* Permet au titre de ne pas coller aux bords de l'écran */
     .titre, .sous-titre {
-        margin-top: 20px;
         margin-right: 20px;
+        padding-left: 20px;
+    }
+
+    .titre {
+        margin-top: 20px;
+    }
+
+    .sous-titre {
+        margin-top: 10px;
+        font-size: 18.5px;
     }
 
     .titre, .sous-titre, h2, .information {
@@ -652,6 +794,85 @@ nav li a:focus {
         width: 100%;
         margin-bottom: 30px;
         border-radius: 0px;
+    }
+
+    .activite_ville {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .activite_ville .titre {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-right: 110px;
+    }
+    
+    .activite_ville .gauche {
+        display: block;
+        margin-left: 40px;
+        margin-bottom: 5px;
+    }
+
+    .activite_ville .droite {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .activite_ville figure {
+        padding: 5px;
+    }
+
+    .activite_ville .gauche figure {
+        width: 320px;
+        height: auto;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+
+    .activite_ville .gauche figure img {
+        height: 140px;
+        width: 310px;
+    }
+
+    .activite_ville .droite figure {
+        width: 320px;
+        height: auto;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+
+    .activite_ville .droite figure img {
+        height: 140px;
+        width: 310px;
+    }
+
+    .activite_ville .droite .figure2 {
+        height: auto;
+    }
+
+    .activite_ville .droite .figure2 img {
+        height: 140px;
+        width: 310px;
+    }
+
+    .activite_ville .droite .figure3 {
+        height: auto;
+    }
+
+    .activite_ville .droite .figure3 img {
+        height: 140px;
+        width: 310px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding-left: 70px;
+    }
+
+    footer section {
+        margin-right: inherit;
     }
 
 
