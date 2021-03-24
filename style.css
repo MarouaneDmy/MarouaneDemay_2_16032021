@@ -32,8 +32,8 @@
 
 /* Crée des marges à gauche et à droite de la page*/
 html {
-   margin-left: 18.5%;
-   margin-right: 18.5%
+   margin-left: 17%;
+   margin-right: 17%
 }
 
 /* Supprime les marges du corps */
@@ -46,6 +46,7 @@ body {
 /* Aligne tout ce qu'il a dans le Header sur la même ligne */
 header {
     display: flex;
+    padding-left: 30px
 }
 
 
@@ -128,6 +129,7 @@ nav li a:focus {
     font-size: 25px;
     margin: 0;
     font-family: Raleway_ExtraBold;
+    padding-left: 30px;
 }
 
 
@@ -136,6 +138,7 @@ nav li a:focus {
 .sous-titre {
     margin: 0;
     margin-top: 5px;
+    padding-left: 30px;
 }
 
 /* ---------------------------- Champs de saisie et bouton de recherche --------------------------------*/
@@ -143,6 +146,7 @@ nav li a:focus {
 /* Permet d'aligner le contenu de la div recherche sur la même ligne*/
 .recherche {
     display: flex;
+    padding-left: 30px;
 }
 
 /* Décale le bloc à droite, ajoute une couleur de fond grise, taille longueur et largeur, arrondis les angles haut et bas gauche puis centre l'image */
@@ -192,6 +196,7 @@ nav li a:focus {
 .filtres {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 30px;
 }
 
 /* Taille, police, positionnement du texte et espacement */
@@ -289,6 +294,7 @@ nav li a:focus {
 /* Aligne le contenu de la div information */
 .information {
     display: flex;
+    padding-left: 30px;
 }
 
 /* Donne un taille, une minimum pour qu'elle ne soit pas déformé, aligne le logo, met une bordure, centre verticalement le bloc p dans la div */
@@ -323,6 +329,7 @@ nav li a:focus {
 /* Aligne tout le contenu de la div hebergement */
 .hebergement {
     display: flex;
+    padding-left: 30px;
 }
 
 /* Fais passer à la ligne les figures lorsqu'elle dépasse la largeur du bloc, change la couleur du fond en gris, ajoute des bords arrondis et crée un espacement */
@@ -337,7 +344,6 @@ nav li a:focus {
 /* Taille du titre, marges gauches, haut et bas et prends toute la largeur pour faire passer les autres blocs à la ligne */
 .hebergement_ville .titre {
     font-size: 20px;
-    margin-left: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
@@ -431,6 +437,7 @@ nav li a:focus {
 /* Police du titre, marge supérieur et hauteur */
 .hebergement_populaire .titre {
     font-size: 20px;
+    padding-left: inherit;
     margin-top: 30px;
     height: 60px;
 }
@@ -451,7 +458,7 @@ nav li a:focus {
     margin-top: 0px;
     margin-bottom: 35px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 10px 10px 10px #E9E9E9;
 }
 
@@ -477,11 +484,13 @@ nav li a:focus {
 .hebergement_populaire figure figcaption .nom_hotel {
     height: 30%;
     padding-top: 10px;
+    padding-left: 20px;
 }
 
 /* Donne 30% du figcaption à la ligne du prix de l'hébergement, marge en haut et en bas pour séparer les figures, taille et police de l'écriture */
 .hebergement_populaire figure figcaption .prix {
     height: 30%;
+    padding-left: 20px;
     padding-top: 15px;
     padding-bottom: 2px;
     font-size: 14.5px;
@@ -492,6 +501,7 @@ nav li a:focus {
 .hebergement_populaire figure figcaption .etoiles {
     display: flex;
     height: 35%;
+    padding-left: 20px;
     align-items: flex-end;
 }
 
@@ -507,13 +517,37 @@ nav li a:focus {
     color: #E9E9E9;  
 }
 
+.hebergement_populaire figcaption {
+    width: 190px;
+}
+
 /* Met l'image sur le côté gauche de la figure, taille de l'image, bordures et marge avec le texte */
 .hebergement_populaire img {
     float: left;
+    width: auto;
+    height: 130px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+/* Met l'image sur le côté gauche de la figure, taille de l'image, bordures et marge avec le texte */
+.hebergement_populaire .exception img {
+    width: auto;
+    height: 180px;
+}
+
+.hebergement_populaire .image {
+    margin: 0;
     width: 120px;
     height: 130px;
-    border-radius: 10px 0px 0px 10px;
-    margin-right: 20px;
+    overflow: hidden;
+}
+
+.hebergement_populaire .exception {
+    margin: 0;
+    width: 120px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 0px 0px 0px 20px;
 }
 
 /*---------------------------------------------------------ACTIVITÉS------------------------------------------------------------*/
@@ -521,6 +555,7 @@ nav li a:focus {
 /* Passage à la ligne lorsque l'un des blocs gauche ou droite n'a plus de place */
 .activite_ville {
     display: flex;
+    padding-left: 30px;
     flex-wrap: wrap;
 }
 
@@ -541,8 +576,11 @@ nav li a:focus {
     font-size: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-left: 0px;
     width: 100%;
 }
+
+/*----------------------------FIGURES GLOBAUX -------------------------------------*/
 
 /* Taille, bordure arrondis, couleur de fond et ombre de la figure */
 .activite_ville figure {
@@ -556,6 +594,13 @@ nav li a:focus {
 .activite_ville figure img {
     width: 270px;
     border-radius: 10px 10px 0px 0px;
+}
+
+.activite_ville figure .image {
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+    width: 270px;
+    margin: 0;
 }
 
 /* Marges extérieurs enlevées et marge dessus ajoutée */
@@ -572,6 +617,14 @@ nav li a:focus {
     padding-left: 10px;  
 }
 
+/*----------------------------FIGURES DE GAUCHE -------------------------------------*/
+
+/* Marges du bloc gauche */
+.activite_ville .gauche {
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
 /* Taille de la figure1 */
 .activite_ville .figure1 {
     height: 340px;
@@ -581,12 +634,7 @@ nav li a:focus {
 /* Taille de l'image de la figure1 */
 .activite_ville .figure1 img {
     height: 300px;
-}
-
-/* Marges du bloc gauche */
-.activite_ville .gauche {
-    margin-right: 40px;
-    margin-bottom: 40px;
+    width: auto;
 }
 
 /* Taille de la figure2 et ajout de marge gauche */
@@ -598,6 +646,11 @@ nav li a:focus {
 
 /* Taille de l'image de la figure3 */
 .activite_ville .figure2 img {
+    height: 300px;
+    width: auto;
+}
+
+.activite_ville .gauche .figure2 .image {
     height: 130px;
 }
 
@@ -611,7 +664,13 @@ nav li a:focus {
 
 /* Taille de l'image de la figure3 */
 .activite_ville .figure3 img {
-    height: 100px;
+    height: 180px;
+    width: auto;
+}
+
+/* Taille que l'image ne doit pas dépasser */
+.activite_ville .gauche .figure3 .image {
+    height: 104px;
 }
 
 /* Taille de la figure2 du bloc de droite */
@@ -621,7 +680,13 @@ nav li a:focus {
 
 /* Taille de l'image de la figure2 du bloc de droite */
 .activite_ville .droite .figure2 img {
-    height: 100px;
+    height: 180px;
+    width: auto;
+}
+
+/* Taille que l'image ne doit pas dépasser */
+.activite_ville .droite .figure2 .image {
+    height: 104px;
 }
 
 /* Taille de la figure3 du bloc droite */
@@ -631,9 +696,14 @@ nav li a:focus {
 
 /* Taille de l'image de la figure3 du bloc de droite */
 .activite_ville .droite .figure3 img {
-    height: 130px;
+    height: 210px;
+    width: auto;
 }
 
+/* Taille que l'image ne doit pas dépasser */
+.activite_ville .droite .figure3 .image {
+    height: 130px;
+}
 
 /*-------------------------------------------------------- FOOTER --------------------------------------------------------*/
 
@@ -645,12 +715,11 @@ footer {
     background-color: #F2F2F2;
     margin-top: 20px;
     padding-top: 15px;
-    padding-left: 10px;
 }
 
 /* Déplacement des sections pour les approcher de la gauche */
 footer section {
-    margin-right: 120px;
+    margin-right: 160px;
 }
 
 /* Décorations du lien enlevé, couleur, police et taille défini */
@@ -667,6 +736,10 @@ footer section p a {
     color: black;
     font-family: Raleway;
     font-size: 17px;
+}
+
+footer section p a:hover {
+    color: #0065FC;
 }
 
 /* ---------------------------------------------------------------- RESPONSIVE DESIGN ---------------------------------------------------------------------*/
@@ -692,6 +765,7 @@ footer section p a {
     /* Position le bouton s'inscrire en haut à droite */
     .inscription {
         position: absolute;
+        margin-top: 45px;
         top: 0;
         right: 0;
     }
@@ -777,6 +851,7 @@ footer section p a {
     /* Inverse le passage à la ligne entre les hébergements de la ville et les populaires */
     .hebergement {
         flex-wrap: wrap-reverse;
+        padding-left: 0px;
     }
 
     /* Change la couleur du fond en blanc et centre le bloc */
@@ -808,7 +883,7 @@ footer section p a {
     .hebergement h2 {
         display: flex;
         justify-content: flex-start;
-        padding-left: 40px;
+        padding-left: 20px;
     }
 
     /* Supprime les bordures courbées, prends toute la largeur de la ligne et ajoute une marge en-dessous */
@@ -823,6 +898,7 @@ footer section p a {
     /* Centre le contenu */
     .activite_ville {
         justify-content: center;
+        padding-left: 0px;
         margin: auto;
     }
 
@@ -861,7 +937,37 @@ footer section p a {
     }
 
     /* Taille des images des figures du bloc de gauche */
-    .activite_ville .gauche figure img {
+    .activite_ville .gauche .figure1 img {
+        height: 210px;
+        width: auto;
+    }
+
+    /* Taille de l'image de la figure1 du bloc de gauche */ 
+    .activite_ville .gauche .figure1 .image {
+        height: 140px;
+        width: 310px;
+    }
+
+    /* Taille des images des figures du bloc de gauche */
+    .activite_ville .gauche .figure2 img {
+        height: 300px;
+        width: auto;
+    }
+
+    /* Taille de l'image de la figure1 du bloc de gauche */ 
+    .activite_ville .gauche .figure2 .image {
+        height: 140px;
+        width: 310px;
+    }
+
+    /* Taille des images des figures du bloc de gauche */
+    .activite_ville .gauche .figure3 img {
+        height: 210px;
+        width: auto;
+    }
+
+    /* Taille de l'image de la figure1 du bloc de gauche */ 
+    .activite_ville .gauche .figure3 .image {
         height: 140px;
         width: 310px;
     }
@@ -875,7 +981,13 @@ footer section p a {
     }
 
     /* Taille des images des figures du bloc de droite */
-    .activite_ville .droite figure img {
+    .activite_ville .droite .figure1 img {
+        height: 210px;
+        width: auto;
+    }
+
+    /* Taille de l'image de la figure3 du bloc de droite */ 
+    .activite_ville .droite .figure1 .image {
         height: 140px;
         width: 310px;
     }
@@ -887,6 +999,12 @@ footer section p a {
 
     /* Taille de l'image de la figure2 du bloc de droite */
     .activite_ville .droite .figure2 img {
+        height: 240px;
+        width: auto;
+    }
+
+    /* Taille de l'image de la figure3 du bloc de droite */ 
+    .activite_ville .droite .figure2 .image {
         height: 140px;
         width: 310px;
     }
@@ -898,6 +1016,12 @@ footer section p a {
 
     /* Taille de l'image de la figure3 du bloc de droite */
     .activite_ville .droite .figure3 img {
+        height: 240px;
+        width: auto;
+    }
+
+     /* Taille de l'image de la figure3 du bloc de droite */ 
+    .activite_ville .droite .figure3 .image {
         height: 140px;
         width: 310px;
     }
@@ -908,13 +1032,14 @@ footer section p a {
     footer {
         flex-direction: column;
         height: auto;
-        padding-left: 70px;
+        padding-left: 70px;        
     }
 
     /* Déshérite la marge droite des sections du footer */
     footer section {
         margin-right: inherit;
     }
+  
 }
 
 
