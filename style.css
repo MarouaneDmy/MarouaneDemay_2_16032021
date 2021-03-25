@@ -1,4 +1,4 @@
-/* ------------------------------------------------ Polices raleway téléchargées --------------------------------------------------*/
+/* ------------------------------------------------ Polices raleway tï¿½lï¿½chargï¿½es --------------------------------------------------*/
 
 @font-face {
     font-family: 'Raleway';
@@ -30,10 +30,11 @@
     font-family: Raleway;
 }
 
-/* Crée des marges à gauche et à droite de la page*/
+/* Crï¿½e des marges ï¿½ gauche et ï¿½ droite de la page*/
 html {
    margin-left: 17%;
-   margin-right: 17%
+   margin-right: 17%;
+   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Supprime les marges du corps */
@@ -43,21 +44,21 @@ body {
 
 /* ------------------------- Logo Reservia et liens de navigation -------------------------------*/
 
-/* Aligne tout ce qu'il a dans le Header sur la même ligne */
+/* Aligne tout ce qu'il a dans le Header sur la mï¿½me ligne */
 header {
     display: flex;
     padding-left: 30px
 }
 
 
-/* Enlève la marge par défaut */
+/* Enlï¿½ve la marge par dï¿½faut */
 nav ul {
     margin: auto;
     margin-right: 0;
     padding: 0;
 }
 
-/* Positionne les liens de navigations en haut à droite */
+/* Positionne les liens de navigations en haut ï¿½ droite */
 nav {
     display: flex;
     margin: auto;
@@ -69,32 +70,32 @@ nav {
     padding-right: 15px;
 }
 
-/* Positionne les liens de navigations en haut à droite */
+/* Positionne les liens de navigations en haut ï¿½ droite */
 nav li {
     display: inline-block;
     padding: 24px;
     border-top: 2px white solid;
 }
 
-/* Enlève le soulignement du texte et change la couleur en gris */
+/* Enlï¿½ve le soulignement du texte et change la couleur en gris */
 nav li a {
     text-decoration: none;
     font-family: Raleway_SemiBold;
     color: #666666;
 }
 
-/* Place le logo Reservia en haut à gauche */
+/* Place le logo Reservia en haut ï¿½ gauche */
 .reservia {
     margin-top: 5px;
 }
 
-/* Place le lien S'inscrire en haut à droite */
+/* Place le lien S'inscrire en haut ï¿½ droite */
 .inscription {
     margin-top: 26px;
     margin-left: 25px;
 }
 
-/* Enlève le soulignement du texte et change sa couleur en bleu*/
+/* Enlï¿½ve le soulignement du texte et change sa couleur en bleu*/
 .inscription a {
     text-decoration: none;
     color: #0065FC;
@@ -107,7 +108,7 @@ nav li a {
     height: auto;
 }
 
-/* Crée une bordure bleu au-dessus des liens de navigations lorsque la souris passe dessus*/
+/* Crï¿½e une bordure bleu au-dessus des liens de navigations lorsque la souris passe dessus*/
 nav li:hover {
     border-top: 2px #0065FC solid;
 }
@@ -117,14 +118,14 @@ nav li a:hover {
     color: #0065FC;
 }
 
-/* Le lien de navigation devient bleu lorsque l'on a cliqué dessus en dernier */
+/* Le lien de navigation devient bleu lorsque l'on a cliquï¿½ dessus en dernier */
 nav li a:focus {
     color: #0065FC;
 }
 
 /* -------------------------------- Titre de la page------------------ --------------*/
 
-/* Taille, décale le titre un peu à droite et change sa police */
+/* Taille, dï¿½cale le titre un peu ï¿½ droite et change sa police */
 .titre {
     font-size: 25px;
     margin: 0;
@@ -134,7 +135,7 @@ nav li a:focus {
 
 
 
-/* Taille, décale le sous-titre un peu à droite et change sa couleur */
+/* Taille, dï¿½cale le sous-titre un peu ï¿½ droite et change sa couleur */
 .sous-titre {
     margin: 0;
     margin-top: 5px;
@@ -143,13 +144,13 @@ nav li a:focus {
 
 /* ---------------------------- Champs de saisie et bouton de recherche --------------------------------*/
 
-/* Permet d'aligner le contenu de la div recherche sur la même ligne*/
+/* Permet d'aligner le contenu de la div recherche sur la mï¿½me ligne*/
 .recherche {
     display: flex;
     padding-left: 30px;
 }
 
-/* Décale le bloc à droite, ajoute une couleur de fond grise, taille longueur et largeur, arrondis les angles haut et bas gauche puis centre l'image */
+/* Dï¿½cale le bloc ï¿½ droite, ajoute une couleur de fond grise, taille longueur et largeur, arrondis les angles haut et bas gauche puis centre l'image */
 .recherche p {
     background-color: #F2F2F2;
     height: 42px;
@@ -158,13 +159,13 @@ nav li a:focus {
     text-align: center;
 }
 
-/* taille de l'image et marge intérieur pour centrer*/
+/* taille de l'image et marge intï¿½rieur pour centrer*/
 .recherche p img {
     width: 15px;
     padding-top: 9px;
 }
 
-/* taille longueur largeur du champs de recherche, marge extérieur pour aligner avec l'image, change les bordures et décale le texte */
+/* taille longueur largeur du champs de recherche, marge extï¿½rieur pour aligner avec l'image, change les bordures et dï¿½cale le texte */
 .recherche input {
     height: 40px;
     width: 180px;
@@ -190,7 +191,7 @@ nav li a:focus {
     display: none;
 }
 
-/* ----------------------------------- Les différents filtres ------------------------------------*/
+/* ----------------------------------- Les diffï¿½rents filtres ------------------------------------*/
 
 /* Aligne tout le contenu de la div filtres */
 .filtres {
@@ -256,7 +257,7 @@ nav li a:focus {
     background-color: #DEEBFF;
 }
 
-/* Fond bleu clair derrière le logo, taille, centre le logo et le positionne verticalement */
+/* Fond bleu clair derriï¿½re le logo, taille, centre le logo et le positionne verticalement */
 .filtres .logo {
     background-color: #DEEBFF;
     width: 40px;
@@ -267,7 +268,7 @@ nav li a:focus {
     margin: auto 0;
 }
 
-/* Centre le contenu et ajoute un espacement à gauche et à droite */
+/* Centre le contenu et ajoute un espacement ï¿½ gauche et ï¿½ droite */
 .filtres .filtre {
     margin: auto;
 }
@@ -297,7 +298,7 @@ nav li a:focus {
     padding-left: 30px;
 }
 
-/* Donne un taille, une minimum pour qu'elle ne soit pas déformé, aligne le logo, met une bordure, centre verticalement le bloc p dans la div */
+/* Donne un taille, une minimum pour qu'elle ne soit pas dï¿½formï¿½, aligne le logo, met une bordure, centre verticalement le bloc p dans la div */
 .information .info {
     width: 25px;
     min-width: 25px;
@@ -319,12 +320,12 @@ nav li a:focus {
     margin-top: 4px;
 }
 
-/* Décalage entre le logo et le texte */
+/* Dï¿½calage entre le logo et le texte */
 .information .nbrLogement {
     padding-left: 10px;
 }
 
-/*--------------------------------- Hébergement de la ville --------------------------------------*/
+/*--------------------------------- Hï¿½bergement de la ville --------------------------------------*/
 
 /* Aligne tout le contenu de la div hebergement */
 .hebergement {
@@ -332,7 +333,7 @@ nav li a:focus {
     padding-left: 30px;
 }
 
-/* Fais passer à la ligne les figures lorsqu'elle dépasse la largeur du bloc, change la couleur du fond en gris, ajoute des bords arrondis et crée un espacement */
+/* Fais passer ï¿½ la ligne les figures lorsqu'elle dï¿½passe la largeur du bloc, change la couleur du fond en gris, ajoute des bords arrondis et crï¿½e un espacement */
 .hebergement_ville {
     display: flex;
     flex-wrap: wrap;
@@ -341,7 +342,7 @@ nav li a:focus {
     margin-right: 35px
 }
 
-/* Taille du titre, marges gauches, haut et bas et prends toute la largeur pour faire passer les autres blocs à la ligne */
+/* Taille du titre, marges gauches, haut et bas et prends toute la largeur pour faire passer les autres blocs ï¿½ la ligne */
 .hebergement_ville .titre {
     font-size: 20px;
     margin-top: 30px;
@@ -349,7 +350,7 @@ nav li a:focus {
     width: 100%;
 }
 
-/* Fond blanc, taille, marge intérieur, bordures, marges entre eux, ombres */
+/* Fond blanc, taille, marge intï¿½rieur, bordures, marges entre eux, ombres */
 .hebergement_ville figure {
     background-color: white;
     width: 210px;
@@ -361,7 +362,7 @@ nav li a:focus {
     box-shadow: 10px 10px 10px #E9E9E9;
 }
 
-/* Taille des images des hébergements et bordures courbées */
+/* Taille des images des hï¿½bergements et bordures courbï¿½es */
 .hebergement_ville img {
     height: 190px;
     width: auto;
@@ -380,13 +381,13 @@ nav li a:focus {
     border-radius: 10px 10px 0px 0px;
 }
 
-/* Police d'écriture à l'intérieur de la figure et marge gauche*/
+/* Police d'ï¿½criture ï¿½ l'intï¿½rieur de la figure et marge gauche*/
 .hebergement_ville figure figcaption {
     margin-top: 10px;
 }
     
 
-/* Police d'écriture à l'intérieur de la figure et marge gauche*/
+/* Police d'ï¿½criture ï¿½ l'intï¿½rieur de la figure et marge gauche*/
 .hebergement_ville figure figcaption p {
     margin: auto;
     padding-left: 10px;
@@ -398,14 +399,14 @@ nav li a:focus {
     font-weight: bold;
 }
 
-/* Enlève le soulignement du lien, change se police et sa couleur en noir */
+/* Enlï¿½ve le soulignement du lien, change se police et sa couleur en noir */
 .hebergement_ville figure figcaption p a {
     text-decoration: none;
     color: black;
     font-family: Raleway_ExtraBold;
 }
 
-/* Police  et taille de la ligne de prix, marges intérieur */
+/* Police  et taille de la ligne de prix, marges intï¿½rieur */
 .hebergement_ville figure figcaption .prix {
     padding-top: 2px;
     padding-bottom: 2px;
@@ -413,18 +414,18 @@ nav li a:focus {
     font-family: Raleway;
 }
 
-/* Couleur des étoiles et leurs tailles */
+/* Couleur des ï¿½toiles et leurs tailles */
 .hebergement_ville i {
     color: #0065FC;
     font-size: 13px;
 }
 
-/* Couleur des étoiles en moins */
+/* Couleur des ï¿½toiles en moins */
 .hebergement_ville span i {
     color: #E9E9E9;
 }
 
-/* Prends toute la largeur pour avoir la ligne pour lui seul, enlève la marge gauche */
+/* Prends toute la largeur pour avoir la ligne pour lui seul, enlï¿½ve la marge gauche */
 .hebergement h2 {
     width: 100%;
     margin-left: 0;
@@ -439,7 +440,7 @@ nav li a:focus {
     color: black;
 }
 
-/*------------------------- Hébergements populaires ---------------------*/
+/*------------------------- Hï¿½bergements populaires ---------------------*/
 
 /* Mets les figures en position de colonne et les centres */
 .hebergement_populaire {
@@ -452,7 +453,7 @@ nav li a:focus {
     border-radius: 20px;
 }
 
-/* Police du titre, marge supérieur et hauteur */
+/* Police du titre, marge supï¿½rieur et hauteur */
 .hebergement_populaire .titre {
     font-size: 20px;
     padding-left: inherit;
@@ -467,7 +468,7 @@ nav li a:focus {
     font-size: 18px;
 }
 
-/* Fond blanc, taille, marge intérieur, bordures, marges entre eux, ombres */
+/* Fond blanc, taille, marge intï¿½rieur, bordures, marges entre eux, ombres */
 .hebergement_populaire figure {
     display: flex;
     width: 320px;
@@ -480,7 +481,7 @@ nav li a:focus {
     box-shadow: 10px 10px 10px #E9E9E9;
 }
 
-/* Police d'écriture du bloc figcaption */
+/* Police d'ï¿½criture du bloc figcaption */
 .hebergement_populaire figure figcaption p {
     margin: auto;
     font-family: Raleway_ExtraBold;
@@ -491,21 +492,21 @@ nav li a:focus {
     font-weight: bold;
 }
 
-/* Enlève les ajouts sur le lien, change la couleur en noir et la police */
+/* Enlï¿½ve les ajouts sur le lien, change la couleur en noir et la police */
 .hebergement_populaire figure figcaption p a {
     text-decoration: none;
     color: black;
     font-family: Raleway_ExtraBold;
 }
 
-/* Donne 30% du figcaption au nom de l'hébergement */
+/* Donne 30% du figcaption au nom de l'hï¿½bergement */
 .hebergement_populaire figure figcaption .nom_hotel {
     height: 30%;
     padding-top: 10px;
     padding-left: 20px;
 }
 
-/* Donne 30% du figcaption à la ligne du prix de l'hébergement, marge en haut et en bas pour séparer les figures, taille et police de l'écriture */
+/* Donne 30% du figcaption ï¿½ la ligne du prix de l'hï¿½bergement, marge en haut et en bas pour sï¿½parer les figures, taille et police de l'ï¿½criture */
 .hebergement_populaire figure figcaption .prix {
     height: 30%;
     padding-left: 20px;
@@ -515,7 +516,7 @@ nav li a:focus {
     font-family: Raleway;
 }
 
-/* Donne 35% du figcaption aux étoiles de l'hébergement et les positionne tout en bas */
+/* Donne 35% du figcaption aux ï¿½toiles de l'hï¿½bergement et les positionne tout en bas */
 .hebergement_populaire figure figcaption .etoiles {
     display: flex;
     height: 35%;
@@ -523,13 +524,13 @@ nav li a:focus {
     align-items: flex-end;
 }
 
-/* Couleur des étoiles en bleu et taille */
+/* Couleur des ï¿½toiles en bleu et taille */
 .hebergement_populaire i { 
     color: #0065FC;
     font-size: 13px;
 }
 
-/* Couleur des étoiles en moins en gris */
+/* Couleur des ï¿½toiles en moins en gris */
 .hebergement_populaire span i {
     display: flex;
     color: #E9E9E9;  
@@ -539,7 +540,7 @@ nav li a:focus {
     width: 190px;
 }
 
-/* Met l'image sur le côté gauche de la figure, taille de l'image, bordures et marge avec le texte */
+/* Met l'image sur le cï¿½tï¿½ gauche de la figure, taille de l'image, bordures et marge avec le texte */
 .hebergement_populaire img {
     float: left;
     width: auto;
@@ -547,7 +548,7 @@ nav li a:focus {
     border-radius: 20px 0px 0px 20px;
 }
 
-/* Met l'image sur le côté gauche de la figure, taille de l'image, bordures et marge avec le texte */
+/* Met l'image sur le cï¿½tï¿½ gauche de la figure, taille de l'image, bordures et marge avec le texte */
 .hebergement_populaire .exception img {
     width: auto;
     height: 180px;
@@ -568,28 +569,28 @@ nav li a:focus {
     border-radius: 0px 0px 0px 20px;
 }
 
-/*---------------------------------------------------------ACTIVITÉS------------------------------------------------------------*/
+/*---------------------------------------------------------ACTIVITï¿½S------------------------------------------------------------*/
 
-/* Passage à la ligne lorsque l'un des blocs gauche ou droite n'a plus de place */
+/* Passage ï¿½ la ligne lorsque l'un des blocs gauche ou droite n'a plus de place */
 .activite_ville {
     display: flex;
     padding-left: 30px;
     flex-wrap: wrap;
 }
 
-/* Passage à la ligne lorsque que le bloc gauche1 ou gauche2 n'a plus de place */
+/* Passage ï¿½ la ligne lorsque que le bloc gauche1 ou gauche2 n'a plus de place */
 .activite_ville .gauche {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Passage à la ligne lorsque que le bloc droite1 ou droite2 n'a plus de place */
+/* Passage ï¿½ la ligne lorsque que le bloc droite1 ou droite2 n'a plus de place */
 .activite_ville .droite {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Taille, police et position du titre, prends 100% de la largeur pour passer les autres blocs à la ligne */
+/* Taille, police et position du titre, prends 100% de la largeur pour passer les autres blocs ï¿½ la ligne */
 .activite_ville .titre {
     font-size: 20px;
     margin-top: 30px;
@@ -621,13 +622,13 @@ nav li a:focus {
     margin: 0;
 }
 
-/* Marges extérieurs enlevées et marge dessus ajoutée */
+/* Marges extï¿½rieurs enlevï¿½es et marge dessus ajoutï¿½e */
 .activite_ville figure figcaption p  {
     margin: 0;
     margin-top: 10px;
 }
 
-/* Enlève les ajouts sur le lien et défini la couleur en noir et la police, ajoute une marge intérieur gauche */
+/* Enlï¿½ve les ajouts sur le lien et dï¿½fini la couleur en noir et la police, ajoute une marge intï¿½rieur gauche */
 .activite_ville figure figcaption p a {
     text-decoration: none;
     color: black;
@@ -686,7 +687,7 @@ nav li a:focus {
     width: auto;
 }
 
-/* Taille que l'image ne doit pas dépasser */
+/* Taille que l'image ne doit pas dï¿½passer */
 .activite_ville .gauche .figure3 .image {
     height: 104px;
 }
@@ -702,7 +703,7 @@ nav li a:focus {
     width: auto;
 }
 
-/* Taille que l'image ne doit pas dépasser */
+/* Taille que l'image ne doit pas dï¿½passer */
 .activite_ville .droite .figure2 .image {
     height: 104px;
 }
@@ -718,14 +719,14 @@ nav li a:focus {
     width: auto;
 }
 
-/* Taille que l'image ne doit pas dépasser */
+/* Taille que l'image ne doit pas dï¿½passer */
 .activite_ville .droite .figure3 .image {
     height: 130px;
 }
 
 /*-------------------------------------------------------- FOOTER --------------------------------------------------------*/
 
-/* Espacement des sections du footer, hauteur du footer, couleur, marge extérieur haute et marges intérieur ajoutés */
+/* Espacement des sections du footer, hauteur du footer, couleur, marge extï¿½rieur haute et marges intï¿½rieur ajoutï¿½s */
 footer {
     display: flex;
     justify-content: space-around;
@@ -735,12 +736,12 @@ footer {
     padding-top: 15px;
 }
 
-/* Déplacement des sections pour les approcher de la gauche */
+/* Dï¿½placement des sections pour les approcher de la gauche */
 footer section {
     margin-right: 160px;
 }
 
-/* Décorations du lien enlevé, couleur, police et taille défini */
+/* Dï¿½corations du lien enlevï¿½, couleur, police et taille dï¿½fini */
 footer section h1 a {
     text-decoration: none;
     color: black;
@@ -748,7 +749,7 @@ footer section h1 a {
     font-size: 20px;
 }
 
-/* Décorations du lien enlevé, couleur, police et taille défini */
+/* Dï¿½corations du lien enlevï¿½, couleur, police et taille dï¿½fini */
 footer section p a {
     text-decoration: none;
     color: black;
@@ -769,18 +770,18 @@ footer section p a:hover {
         display: inline;
     }
 
-    /* Ajoute une marge à gauche du logo */
+    /* Ajoute une marge ï¿½ gauche du logo */
     .reservia {
         margin-left: 20px;
     }
 
-    /* La navigation prends toute la largeur et se colle au côté */
+    /* La navigation prends toute la largeur et se colle au cï¿½tï¿½ */
     nav ul {
         width: 100%;
         padding-left: 0;
     }
 
-    /* Position le bouton s'inscrire en haut à droite */
+    /* Position le bouton s'inscrire en haut ï¿½ droite */
     .inscription {
         position: absolute;
         margin-top: 45px;
@@ -788,7 +789,7 @@ footer section p a:hover {
         right: 0;
     }
 
-    /* Enlève la bordure du haut qui s'affiche et ajoute une en bas grise, prends la moitié de la largeur pour chaque lien puis aligne le texte */
+    /* Enlï¿½ve la bordure du haut qui s'affiche et ajoute une en bas grise, prends la moitiï¿½ de la largeur pour chaque lien puis aligne le texte */
     nav li {
         border-bottom: 2px #F2F2F2 solid;
         border-top: hidden;
@@ -809,7 +810,7 @@ footer section p a:hover {
         margin: auto;
     }
 
-    /* Permet au titre de ne pas coller aux bords de l'écran */
+    /* Permet au titre de ne pas coller aux bords de l'ï¿½cran */
     .titre, .sous-titre {
         margin-right: 20px;
         padding-left: 20px;
@@ -828,7 +829,7 @@ footer section p a:hover {
         margin-left: 20px;
     }
 
-    /* Centre le champs de recherche sur l'écran */
+    /* Centre le champs de recherche sur l'ï¿½cran */
     .recherche {
        justify-content: center;
     }
@@ -839,7 +840,7 @@ footer section p a:hover {
         border-radius: 0 30% 30% 0;
     }
 
-    /* Disparition du bouton Recherche écrit */
+    /* Disparition du bouton Recherche ï¿½crit */
     .defaut {
         display: none;
     }
@@ -849,12 +850,12 @@ footer section p a:hover {
         display: inline;
     }
 
-    /* Fais passer tous les filtres à la ligne */
+    /* Fais passer tous les filtres ï¿½ la ligne */
     .filtres h2 {
         width: 100%;
     }
 
-    /* Ajoute une marge au filtre pour ne pas coller au bord de l'écran */
+    /* Ajoute une marge au filtre pour ne pas coller au bord de l'ï¿½cran */
     .economie, .famille, .romantique, .animaux {
         margin-right: 20px;
     }
@@ -866,7 +867,7 @@ footer section p a:hover {
 
     /*--------------------------------------- HEBERGEMENT -----------------------------------------*/
 
-    /* Inverse le passage à la ligne entre les hébergements de la ville et les populaires */
+    /* Inverse le passage ï¿½ la ligne entre les hï¿½bergements de la ville et les populaires */
     .hebergement {
         flex-wrap: wrap-reverse;
         padding-left: 0px;
@@ -916,14 +917,14 @@ footer section p a:hover {
         padding-left: 20px;
     }
 
-    /* Supprime les bordures courbées, prends toute la largeur de la ligne et ajoute une marge en-dessous */
+    /* Supprime les bordures courbï¿½es, prends toute la largeur de la ligne et ajoute une marge en-dessous */
     .hebergement_populaire {
         width: 100%;
         margin-bottom: 30px;
         border-radius: 0px;
     }
     
-    /*------------------------------------------- ACTIVITÉ -------------------------------------------- */
+    /*------------------------------------------- ACTIVITï¿½ -------------------------------------------- */
 
     /* Centre le contenu */
     .activite_ville {
@@ -932,7 +933,7 @@ footer section p a:hover {
         margin: auto;
     }
 
-    /* Centre le titre et le déplace à gauche, prends 100% de la largeur pour prendre la ligne */
+    /* Centre le titre et le dï¿½place ï¿½ gauche, prends 100% de la largeur pour prendre la ligne */
     .activite_ville .titre {
         display: flex;
         justify-content: center;
@@ -940,20 +941,20 @@ footer section p a:hover {
         padding-right: 110px;
     }
     
-    /* Redonne l'affichage block pour passer à la ligne et ajout des marges extérieurs gauches et basses */
+    /* Redonne l'affichage block pour passer ï¿½ la ligne et ajout des marges extï¿½rieurs gauches et basses */
     .activite_ville .gauche {
         display: block;
         margin-left: 40px;
         margin-bottom: 5px;
     }
 
-    /* Redonne l'affichage block pour passer à la ligne et ajoute une marge basse */
+    /* Redonne l'affichage block pour passer ï¿½ la ligne et ajoute une marge basse */
     .activite_ville .droite {
         display: block;
         margin-bottom: 5px;
     }
 
-    /* Ajout d'une marge intérieur */
+    /* Ajout d'une marge intï¿½rieur */
     .activite_ville figure {
         padding: 5px;
     }
@@ -1058,14 +1059,14 @@ footer section p a:hover {
 
     /*---------------------------------------------- FOOTER ------------------------------------------*/
 
-    /* Le contenu s'affiche en colonne, la hauteur du bloc footer est maintenant automatique et ajoute une marge intérieur */
+    /* Le contenu s'affiche en colonne, la hauteur du bloc footer est maintenant automatique et ajoute une marge intï¿½rieur */
     footer {
         flex-direction: column;
         height: auto;
         padding-left: 70px;        
     }
 
-    /* Déshérite la marge droite des sections du footer */
+    /* Dï¿½shï¿½rite la marge droite des sections du footer */
     footer section {
         margin-right: inherit;
     }
