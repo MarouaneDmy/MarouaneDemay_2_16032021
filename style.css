@@ -354,12 +354,37 @@ nav li a:focus {
     background-color: white;
     width: 210px;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-left: 30px;
     margin-top: 0px;
     margin-right: 20px;
     box-shadow: 10px 10px 10px #E9E9E9;
 }
+
+/* Taille des images des hébergements et bordures courbées */
+.hebergement_ville img {
+    height: 190px;
+    width: auto;
+}
+
+.hebergement_ville .exception {
+    height: auto;
+    width: 200px;
+}
+
+.hebergement_ville .image {
+    margin: 0;
+    height: 120px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* Police d'écriture à l'intérieur de la figure et marge gauche*/
+.hebergement_ville figure figcaption {
+    margin-top: 10px;
+}
+    
 
 /* Police d'écriture à l'intérieur de la figure et marge gauche*/
 .hebergement_ville figure figcaption p {
@@ -397,13 +422,6 @@ nav li a:focus {
 /* Couleur des étoiles en moins */
 .hebergement_ville span i {
     color: #E9E9E9;
-}
-
-/* Taille des images des hébergements et bordures courbées */
-.hebergement_ville img {
-    height: 140px;
-    width: 200px;
-    border-radius: 10px 10px 0px 0px;
 }
 
 /* Prends toute la largeur pour avoir la ligne pour lui seul, enlève la marge gauche */
@@ -585,7 +603,7 @@ nav li a:focus {
 /* Taille, bordure arrondis, couleur de fond et ombre de la figure */
 .activite_ville figure {
     width: 270px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: white;
     box-shadow: 10px 10px 10px #E9E9E9;
 }
@@ -877,6 +895,18 @@ footer section p a:hover {
     /* Modifie la taille de l'image */
     .hebergement_ville img {
         width: 310px;
+        height: auto;
+    }
+
+
+    .hebergement_ville .exception {
+        height: auto;
+        width: 310px;
+    }
+
+    .hebergement_ville .image {
+        height: 140px;
+        width: 310px;       
     }
 
     /* Positionne le sous-titre afficher plus */
