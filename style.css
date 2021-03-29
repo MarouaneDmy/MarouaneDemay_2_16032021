@@ -917,8 +917,9 @@ footer section p a:hover {
         padding-left: 20px;
     }
 
-    /*---------------------------------- HEBERGEMENT PUPULAIRE -------------------------------------------*/
-    
+   /*---------------------------------- HEBERGEMENT PUPULAIRE -------------------------------------------*/    
+
+
     /* Supprime les bordures courb�es, prends toute la largeur de la ligne et ajoute une marge en-dessous */
     .hebergement_populaire {
         width: 100%;
