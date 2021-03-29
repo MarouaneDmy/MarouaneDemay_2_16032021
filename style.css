@@ -917,12 +917,29 @@ footer section p a:hover {
         padding-left: 20px;
     }
 
+    /*---------------------------------- HEBERGEMENT PUPULAIRE -------------------------------------------*/
+    
     /* Supprime les bordures courb�es, prends toute la largeur de la ligne et ajoute une marge en-dessous */
     .hebergement_populaire {
         width: 100%;
         margin-bottom: 30px;
         border-radius: 0px;
     }
+
+    /* Fond blanc, taille, marge int�rieur, bordures, marges entre eux, ombres */
+    .hebergement_populaire figure {
+        width: 500px;
+    }
+
+    /* Donne 30% du figcaption au nom de l'h�bergement */
+    .hebergement_populaire figure figcaption .nom_hotel {
+        width: 300px;
+    }
+
+    .hebergement_populaire .image {
+        border-radius: 0px 0px 0px 20px;
+    }
+
     
     /*------------------------------------------- ACTIVIT� -------------------------------------------- */
 
@@ -1071,6 +1088,112 @@ footer section p a:hover {
         margin-right: inherit;
     }
   
+}
+
+@media screen and (max-width: 740px) {
+
+    /* Fond blanc, taille, marge int�rieur, bordures, marges entre eux, ombres */    
+    .hebergement_populaire figure {
+        display: flex;
+        width: 320px;
+        height: 140px;
+        padding: 5px;
+        margin-top: 0px;
+        margin-bottom: 35px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px #E9E9E9;
+    } 
+
+    /* Police d'�criture du bloc figcaption */
+    .hebergement_populaire figure figcaption p {
+        margin: auto;
+        font-family: Raleway_ExtraBold;
+    }
+
+    /* Mets le prix en gras */
+    .hebergement_populaire figure figcaption p span {
+        font-weight: bold;
+    }
+
+    /* Enl�ve les ajouts sur le lien, change la couleur en noir et la police */
+    .hebergement_populaire figure figcaption p a {
+        text-decoration: none;
+        color: black;
+        font-family: Raleway_ExtraBold;
+    }
+
+    /* Donne 30% du figcaption au nom de l'h�bergement */
+    .hebergement_populaire figure figcaption .nom_hotel {
+        height: 30%;
+        width: auto;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    /* Donne 30% du figcaption � la ligne du prix de l'h�bergement, marge en haut et en bas pour s�parer les figures, taille et police de l'�criture */
+    .hebergement_populaire figure figcaption .prix {
+        height: 30%;
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 2px;
+        font-size: 14.5px;
+        font-family: Raleway;
+    }
+
+    /* Donne 35% du figcaption aux �toiles de l'h�bergement et les positionne tout en bas */
+    .hebergement_populaire figure figcaption .etoiles {
+        display: flex;
+        height: 35%;
+        padding-left: 20px;
+        align-items: flex-end;
+    }
+
+    /* Couleur des �toiles en bleu et taille */
+    .hebergement_populaire i { 
+        color: #0065FC;
+        font-size: 13px;
+    }
+
+    /* Couleur des �toiles en moins en gris */
+    .hebergement_populaire span i {
+        display: flex;
+        color: #E9E9E9;  
+    }
+
+    .hebergement_populaire figcaption {
+        width: 190px;
+    }
+
+    /* Met l'image sur le c�t� gauche de la figure, taille de l'image, bordures et marge avec le texte */
+    .hebergement_populaire img {
+        float: left;
+        width: auto;
+        height: 130px;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    /* Met l'image sur le c�t� gauche de la figure, taille de l'image, bordures et marge avec le texte */
+    .hebergement_populaire .exception img {
+        width: auto;
+        height: 180px;
+    }
+
+    .hebergement_populaire .image {
+        margin: 0;
+        width: 120px;
+        height: 130px;
+        overflow: hidden;
+    }
+
+    .hebergement_populaire .exception {
+        margin: 0;
+        width: 120px;
+        height: 130px;
+        overflow: hidden;
+        border-radius: 0px 0px 0px 20px;
+    }
+
 }
 
 
